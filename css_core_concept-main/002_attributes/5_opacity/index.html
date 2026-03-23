@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 불투명도 (opacity) vs RGBA</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 아래를 완성하세요.
+      (배경이 비치는지 확인하려면 body에 참조 이미지 배경을 넣습니다. 예: url("https://picsum.photos/500"))
+
+      1. .opacity-box
+         - background-color: black
+         - opacity: 0.5  → 요소 전체(글자 포함)가 흐려짐
+
+      2. .rgba-box
+         - background-color: rgba(0, 0, 0, 0.5)  → 배경만 반투명, 글자는 선명
+
+      3. .btn.disabled
+         - opacity: 0.4, cursor: not-allowed  → 비활성화 시각 표현
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box opacity-box">
+        <h3>Opacity 0.5</h3>
+        <p>
+          글자도 같이 투명해져서<br />잘 안 보입니다. 새로고침해서 비교해보세요.
+        </p>
+      </div>
+
+      <div class="box rgba-box">
+        <h3>RGBA 0.5</h3>
+        <p>배경만 투명하고<br />글자는 선명합니다.</p>
+      </div>
+
+      <button class="btn">버튼</button>
+
+      <button class="btn disabled" disabled>전송 불가</button>
+    </div>
+  </body>
+</html>

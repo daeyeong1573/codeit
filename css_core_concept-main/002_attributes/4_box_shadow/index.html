@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 그림자 (box-shadow)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 아래를 완성하세요.
+
+      1. .card (붕 떠 있는 카드)
+         - box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1)
+         - offset-x 0, offset-y 4px, blur 15px, 투명한 검정
+
+      2. .input-box (안쪽으로 파인 입력창)
+         - box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1)
+         - inset 키워드로 내부 그림자
+
+      3. .neon-btn (네온 발광 버튼)
+         - box-shadow: 0 0 10px #0f0
+         - text-shadow: 0 0 5px #0f0
+
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">Soft Card</div>
+
+      <input type="text" class="input-box" placeholder="Search..." />
+
+      <button class="neon-btn">Glow Button</button>
+    </div>
+  </body>
+</html>

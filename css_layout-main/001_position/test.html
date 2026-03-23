@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .gallery-item {
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .gallery-item-content {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="1.jpg" alt="이미지 1" />
+        <div class="gallery-item-content">
+          <h3>제목 1</h3>
+          <p>설명...</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="2.jpg" alt="이미지 2" />
+        <div class="gallery-item-content">
+          <h3>제목 2</h3>
+          <p>설명...</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="3.jpg" alt="이미지 3" />
+        <div class="gallery-item-content">
+          <h3>제목 3</h3>
+          <p>설명...</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="4.jpg" alt="이미지 4" />
+        <div class="gallery-item-content">
+          <h3>제목 4</h3>
+          <p>설명...</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="5.jpg" alt="이미지 5" />
+        <div class="gallery-item-content">
+          <h3>제목 5</h3>
+          <p>설명...</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="6.jpg" alt="이미지 6" />
+        <div class="gallery-item-content">
+          <h3>제목 6</h3>
+          <p>설명...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 블록(Block)과 인라인(Inline)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 블록과 인라인 요소의 차이를 확인하세요.
+
+      .box 공통
+         - background-color: #ffcc80, border: 2px solid #ef6c00
+
+      1. .block (블록 요소)
+         - width: 200px, height: 50px
+         - margin-bottom: 10px
+
+      2. .inline (인라인 요소)
+         - width: 200px, height: 50px  (인라인에서는 무시됨 - 확인용)
+         - margin-top: 50px  (인라인 상하 여백은 레이아웃에 반영 안 됨 - 확인용)
+         - margin-right: 10px  (좌우 여백은 적용됨)
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>1. Block Element (div)</h3>
+      <div class="box block">첫 번째 블록</div>
+      <div class="box block">두 번째 블록 (줄바꿈 됨)</div>
+
+      <hr />
+
+      <h3>2. Inline Element (span)</h3>
+      <span class="box inline">첫 번째 인라인</span>
+      <span class="box inline">두 번째 인라인</span>
+      <span class="box inline">세 번째 인라인</span>
+    </div>
+  </body>
+</html>

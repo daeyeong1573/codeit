@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 자손/자식 선택자</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 공백(자손)과 >(자식) 선택자를 적용하세요.
+
+      1. .menu li (자손 - .menu 안의 모든 li)
+         - border-bottom: 1px solid #ddd, padding: 10px
+
+      2. .menu > ul > li (자식 - .menu의 직계 ul의 직계 li만, 메인 메뉴만)
+         - font-weight: bold, color: navy
+
+      ul 기본: list-style: none, padding: 0
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li>메뉴 1</li>
+        <li>
+          메뉴 2
+          <ul class="sub-menu">
+            <li>서브 메뉴 2-1</li>
+            <li>서브 메뉴 2-2</li>
+          </ul>
+        </li>
+        <li>메뉴 3</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 선택자 목록 (쉼표)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 쉼표(,)로 여러 선택자를 그룹화하세요.
+
+      button, .btn-primary, input[type="submit"] 에 공통 스타일 적용:
+         - display: inline-block, padding: 10px 20px
+         - border: 1px solid transparent, border-radius: 4px
+         - font-size: 14px, font-weight: bold
+         - text-decoration: none (a 태그용), cursor: pointer, text-align: center
+
+      .btn-primary, input[type="submit"] 에 추가:
+         - background-color: #007bff, color: white
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="btn-group">
+      <button class="btn-primary">저장하기</button>
+      <a href="#" class="btn-primary">링크 이동</a>
+      <input type="submit" value="제출하기" />
+    </div>
+  </body>
+</html>

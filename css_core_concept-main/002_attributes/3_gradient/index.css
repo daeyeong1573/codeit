@@ -1,0 +1,41 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 linear-gradient를 적용하세요.
+- 버튼: 방향과 색상 정지점을 사용한 그라디언트 + 호버 시 색 순서 반대로
+- 스트라이프: 50% / 50% 로 경계선 만들기
+- 카드: 그라디언트 + url() 로 이미지 위 딤드 처리
+*/
+
+.container {
+  padding: 20px;
+}
+
+.gradient-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.stripe-box {
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+}

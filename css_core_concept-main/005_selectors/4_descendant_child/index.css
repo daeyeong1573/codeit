@@ -1,0 +1,11 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/* 자손: .menu li (공백) / 자식: .menu > ul > li (>) */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* .menu 안의 모든 li */
+
+/* .menu의 직계 ul > 직계 li (메인 메뉴만) */

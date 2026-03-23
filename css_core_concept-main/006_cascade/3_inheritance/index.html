@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 상속 (Inheritance)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 상속과 inherit를 적용하세요.
+
+      1. .container
+         - color: #555, font-family: Arial, font-size: 18px
+         - border: 5px solid orange, padding: 30px
+         (텍스트 관련은 자식에게 상속, border/padding은 상속 안 됨)
+
+      2. span
+         - font-weight: bold  (color는 부모에서 상속됨)
+
+      3. a
+         - display: block, margin-top: 10px
+         (a는 브라우저 기본색이 있어 상속을 무시함)
+
+      4. .force-inherit
+         - color: inherit, text-decoration: none
+         (부모 색상을 강제로 따르게)
+
+      5. button
+         - display: block, margin-top: 10px
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>나는 부모의 폰트와 색상을 <span>물려받습니다.</span></p>
+
+      <a href="#">나는 물려받지 않고 파란색입니다.</a>
+      <button>나도 독자적인 스타일을 가집니다.</button>
+
+      <a href="#" class="force-inherit">나는 부모 색상을 따릅니다.</a>
+    </div>
+  </body>
+</html>

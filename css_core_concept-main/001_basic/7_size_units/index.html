@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 다양한 크기 단위</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>크기 단위 연습</h1>
+
+    <section class="demo">
+      <h2>1. px</h2>
+      <div class="box-px">width: 300px, height: 80px</div>
+    </section>
+
+    <section class="demo">
+      <h2>2. % (부모 기준)</h2>
+      <div class="parent">
+        부모 400px
+        <div class="child">자식 50%</div>
+      </div>
+    </section>
+
+    <section class="demo">
+      <h2>3. rem (루트 기준)</h2>
+      <p class="text-rem">font-size: 1.5rem</p>
+    </section>
+
+    <section class="demo">
+      <h2>4. em (글자 크기 기준)</h2>
+      <button class="btn-em">padding: 1em 1.5em</button>
+    </section>
+
+    <section class="demo">
+      <h2>5. vw (뷰포트 기준)</h2>
+      <div class="box-viewport">width: 80vw</div>
+    </section>
+  </body>
+</html>

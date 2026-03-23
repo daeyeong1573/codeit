@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: box-sizing</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 두 박스의 크기 차이를 구현하세요.
+
+      .box 공통
+         - width: 300px, height: 150px
+         - padding: 20px, border: 5px solid blue
+         - background-color: #e3f2fd, margin-bottom: 30px, color: #333, font-weight: bold
+
+      1. .content-box
+         - box-sizing: content-box  (기본값, 전체 너비가 350px이 됨)
+
+      2. .border-box
+         - box-sizing: border-box   (전체 너비 300px 유지)
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>1. Content Box (기본)</h3>
+      <div class="box content-box">
+        Width: 300px<br />
+        Actual: 350px
+      </div>
+
+      <h3>2. Border Box (권장)</h3>
+      <div class="box border-box">
+        Width: 300px<br />
+        Actual: 300px
+      </div>
+    </div>
+  </body>
+</html>

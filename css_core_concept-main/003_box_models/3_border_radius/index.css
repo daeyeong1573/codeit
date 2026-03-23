@@ -1,0 +1,38 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 border, border-radius를 적용하세요.
+- 프로필: 원형(50%), 테두리, 그림자
+- 입력창: border-bottom만 사용
+- 버튼: 캡슐 모양(border-radius 큰 값)
+*/
+
+.container {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.profile-box {
+  position: relative;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+.input-underline {
+}
+
+.btn-capsule {
+}

@@ -1,0 +1,42 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 배경 이미지를 적용하세요.
+- background-image, background-repeat, background-position, background-size 를 사용합니다.
+- 히어로와 카드 이미지 영역에 각각 적절한 배경을 넣어 주세요.
+*/
+
+.hero {
+  width: 80vw;
+  height: 50vw;
+  margin: 0 auto;
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 16px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 50px auto 0;
+}
+
+.card-image {
+  background-image: url(./dog2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}

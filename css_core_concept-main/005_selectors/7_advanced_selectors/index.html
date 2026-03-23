@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 고급 선택자 (:nth-child, :not, +)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 순서·부정·인접 형제 선택자를 적용하세요.
+
+      1. .board-list li
+         - padding: 15px, border-bottom: 1px solid #ccc
+
+      2. .board-list li:last-child
+         - border-bottom: none  (마지막 항목 밑줄 제거)
+
+      3. .board-list li:nth-child(even)
+         - background-color: #f9f9f9  (짝수 번째만)
+
+      4. .board-list li:nth-child(-n+3)
+         - color: #0056b3, font-weight: bold  (1~3번째만)
+
+      5. .btn-group button + button
+         - margin-left: 10px  (두 번째 버튼부터 왼쪽 마진)
+
+      .board-list: list-style: none, padding: 0, border: 1px solid #ccc
+      .btn-group button: padding 10px 20px, background #fff, border 1px solid #333, cursor pointer
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>공지사항 리스트</h3>
+      <ul class="board-list">
+        <li>[공지] 서비스 점검 안내</li>
+        <li>자주 묻는 질문 모음</li>
+        <li>이벤트 당첨자 발표</li>
+        <li>서버 증설 작업 예정</li>
+        <li>신규 가입 혜택 안내</li>
+      </ul>
+
+      <h3>버튼 그룹</h3>
+      <div class="btn-group">
+        <button>저장</button>
+        <button>수정</button>
+        <button>삭제</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 선택자 활용 정리</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 클래스·자손·체이닝을 활용하세요.
+      (가상 클래스 :hover는 사용하지 않습니다.)
+
+      1. .product-card
+         - border: 1px solid #ddd, border-radius: 8px, overflow: hidden, width: 300px
+
+      2. .product-name
+         - font-size: 18px, margin: 15px
+
+      3. .product-price
+         - font-size: 16px, color: #555, margin: 0 15px 15px
+
+      4. .btn 공통
+         - width: 100%, padding: 15px, border: none, cursor: pointer, font-size: 16px
+
+      5. .btn.btn-cart (체이닝: .btn이면서 .btn-cart)
+         - background-color: #333, color: white
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-info">
+        <h3 class="product-name">프리미엄 울 코트</h3>
+        <p class="product-price">₩250,000</p>
+
+        <button class="btn btn-cart">장바구니 담기</button>
+      </div>
+    </div>
+  </body>
+</html>

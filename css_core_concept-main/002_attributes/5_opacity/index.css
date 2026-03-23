@@ -1,0 +1,48 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 opacity와 RGBA를 적용하세요.
+- opacity-box: opacity로 요소 전체 투명 (자식 글자까지 흐려짐)
+- rgba-box: rgba로 배경만 투명 (글자는 선명)
+- 버튼 호버/비활성화에 opacity 활용
+*/
+
+body {
+  background-image: url("https://picsum.photos/500");
+  background-size: cover;
+  padding: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.opacity-box {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.rgba-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: block;
+  margin-top: 10px;
+}
+
+.btn.disabled {
+}

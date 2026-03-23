@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ROKAFSans";
+  src: url("../fonts/ROKAFBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("./woff2/PretendardVariable.woff2") format("woff2-variations");
+}
+
+:root {
+  --primary-100: #3692ff;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  height: 70px;
+  width: 100vw;
+}
+
+main {
+  width: auto;
+  height: auto;
+  padding-top: 70px;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  margin: 9.5px 200px;
+  justify-content: space-between; /* 로고는 왼쪽, 로그인은 오른쪽 */
+  padding: 0 24px;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo-container p {
+  font-family: "ROKAFSans", sans-serif;
+  font-weight: 700;
+  font-size: 25.63px;
+  margin-left: 8.5px;
+  color: var(--primary-100);
+}
+
+.logo-image {
+  width: auto;
+  height: auto;
+}
+
+.login-btn {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Pretendard Variable", sans-serif;
+  width: 128px;
+  height: 48px;
+  background-color: var(--primary-100);
+}
+
+.banner-section {
+  display: flex;
+  background-image: url(../images/Img_home_top.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #cfe5ff;
+  height: 540px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  padding-left: 405px;
+  padding-right: 405px;
+}
+
+.banner-text {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 40px;
+  color: #374151;
+  font-weight: 700;
+}

@@ -1,0 +1,16 @@
+/* ========== 여기에 스타일을 작성하세요 ========== */
+/* index.html 의 <style> 안에 있던 CSS를 이 파일로 옮깁니다. */
+/* HTML에는 <link rel="stylesheet" href="index.css"> 를 추가하고 <style> 블록은 제거하세요. */
+body {
+  background-color: #f0f0f0;
+  font-family: "Malgun Gothic", sans-serif;
+  padding: 20px;
+}
+h1 {
+  color: navy;
+  font-size: 28px;
+}
+.intro {
+  color: #555;
+  line-height: 1.6;
+}

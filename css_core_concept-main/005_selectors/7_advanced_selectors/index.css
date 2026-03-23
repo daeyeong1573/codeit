@@ -1,0 +1,30 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/* :last-child, :nth-child(even), :nth-child(-n+3), 인접 형제(+) */
+
+.board-list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+.board-list li {
+}
+
+.board-list li:last-child {
+}
+
+.board-list li:nth-child(even) {
+}
+
+.board-list li:nth-child(-n + 3) {
+}
+
+.btn-group button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.btn-group button + button {
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 마진 상쇄</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 마진 상쇄 현상과 해결을 구현하세요.
+
+      1. 형제 간 상쇄
+         - .box-1: margin-bottom: 50px, background-color: #ffcdd2
+         - .box-2: margin-top: 30px, background-color: #bbdefb
+         - .box 공통: width 200px, height 50px, border 1px solid #999
+
+      2. 부모-자식 간 상쇄 (문제 상황)
+         - .parent.collapse: width 300px, height 100px, background #e1bee7
+         - .child: width 100px, height 50px, background #ba68c8, margin-top: 30px
+
+      3. 부모-자식 간 해결
+         - .parent.fix: .parent와 동일 + padding-top: 1px (또는 overflow: hidden)
+         - .child 동일
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>1. 형제 간 상쇄 현상</h3>
+      <div class="box box-1">Margin Bottom: 50px</div>
+      <div class="box box-2">Margin Top: 30px</div>
+      <p class="result">결과: 사이 간격은 80px이 아니라 50px입니다.</p>
+
+      <hr />
+
+      <h3>2. 부모-자식 간 상쇄 (문제 상황)</h3>
+      <div class="parent collapse">
+        <div class="child">Child (Margin Top: 30px)</div>
+      </div>
+      <p class="result">자식이 아니라 부모 전체가 내려옵니다.</p>
+
+      <h3>3. 부모-자식 간 상쇄 해결 (Fix)</h3>
+      <div class="parent fix">
+        <div class="child">Child (Margin Top: 30px)</div>
+      </div>
+      <p class="result">부모에 padding을 주어 벽을 세우면 정상 작동합니다.</p>
+    </div>
+  </body>
+</html>

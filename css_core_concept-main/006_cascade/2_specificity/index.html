@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 명시도 (Specificity)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 명시도 점수(ID, Class, Tag)에 따른 적용을 확인하세요.
+
+      1. p (태그 1개 = 0,0,1)
+         - color: grey
+
+      2. .text (클래스 1개 = 0,1,0)
+         - color: yellow
+
+      3. p.highlight (클래스+태그 = 0,1,1)
+         - color: orange
+
+      4. #content p (아이디+태그 = 1,0,1)
+         - color: red
+
+      5. #content .text (아이디+클래스 = 1,1,0)  ← 최종 승자
+         - color: blue
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="content" class="main-article">
+      <p class="text highlight">이 텍스트는 무슨 색일까요?</p>
+    </div>
+  </body>
+</html>

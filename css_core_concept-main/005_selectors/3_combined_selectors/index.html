@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 결합 선택자 (붙여 쓰기)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 .alert 와 .success, .warning 을 붙여 쓰기로 구분하세요.
+
+      1. .alert 공통
+         - padding: 15px, margin-bottom: 10px, border: 1px solid #ddd
+         - border-radius: 4px, background-color: #f9f9f9, color: #333
+
+      2. .alert.success (알림이면서 success 클래스)
+         - background-color: #d4edda, border-color: #c3e6cb, color: #155724
+
+      3. .alert.warning (알림이면서 warning 클래스)
+         - background-color: #fff3cd, border-color: #ffeeba, color: #856404
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="alert">기본 알림입니다.</div>
+
+      <div class="alert success">작업이 성공적으로 완료되었습니다.</div>
+
+      <div class="alert warning">주의: 저장되지 않은 데이터가 있습니다.</div>
+
+      <p class="success">이 텍스트는 박스 스타일이 적용되지 않습니다.</p>
+    </div>
+  </body>
+</html>

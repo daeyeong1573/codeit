@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: 선택자 심화 (전체, 속성)</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 아래를 완성하세요.
+
+      1. 전체 선택자 **
+         - box-sizing: border-box
+         - margin: 0, padding: 0
+
+      2. input[type="text"], input[type="password"]
+         - border: 1px solid #ddd, border-radius: 4px
+
+      3. input[type="submit"]
+         - background-color: #4caf50, color: white, border: none
+         - cursor: pointer, font-weight: bold
+
+      4. a[target="_blank"]
+         - color: #2ec4b6, text-decoration: underline
+
+      5. input 공통: display: block, width: 100%, padding: 10px, margin-bottom: 10px
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form class="login-form">
+      <input type="text" placeholder="아이디" />
+      <input type="password" placeholder="비밀번호" />
+      <input type="text" placeholder="추천인 코드 (선택)" />
+      <input type="submit" value="로그인" />
+
+      <div class="links">
+        <a href="https://naver.com" target="_blank">네이버로 로그인</a>
+        <a href="/find-pw">비밀번호 찾기</a>
+      </div>
+    </form>
+  </body>
+</html>

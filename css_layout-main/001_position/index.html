@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: Position</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 position(relative, absolute, fixed)을 적용하세요.
+
+      1. .product-card
+         - position: relative (배지의 기준점)
+
+      2. .discount-badge
+         - position: absolute
+         - top: -10px, right: -10px
+         - background-color: #ff4444, color: white
+         - padding: 8px 12px, border-radius: 50%, font-weight: bold
+
+      3. .fixed-header
+         - position: fixed, top: 0, left: 0, right: 0
+         - height: 60px, background-color: white
+         - box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+         - z-index: 1000
+
+      4. body에 padding-top: 80px (고정 헤더가 콘텐츠를 가리지 않도록)
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="fixed-header">고정 헤더 (스크롤해도 위에 고정)</header>
+
+    <div class="product-card">
+      <span class="discount-badge">30%</span>
+      <img
+        src="https://picsum.photos/300/200"
+        alt="상품"
+        width="300"
+        height="200"
+      />
+      <h3>무선 이어폰</h3>
+      <p>99,000원</p>
+    </div>
+
+    <p style="margin-top: 40px">스크롤해 보면 헤더가 화면 상단에 고정됩니다.</p>
+    <p>상품 카드 우측 상단에 할인 배지가 absolute로 배치됩니다.</p>
+  </body>
+</html>

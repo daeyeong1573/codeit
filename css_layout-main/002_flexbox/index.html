@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: Flexbox</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 Flexbox를 적용하세요.
+
+      1. .navbar
+         - display: flex
+         - justify-content: space-between
+         - align-items: center
+         - padding: 20px, background-color: #f0f0f0
+
+      2. .menu
+         - display: flex
+         - gap: 20px
+         - list-style: none, margin: 0, padding: 0
+
+      3. .card-grid
+         - display: flex
+         - flex-wrap: wrap
+         - gap: 20px
+
+      4. .card
+         - flex: 1 1 200px (최소 200px, 유연하게 늘어남)
+         - padding: 20px, background-color: white
+         - border: 1px solid #ddd, border-radius: 8px
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Logo</div>
+      <ul class="menu">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">문의</a></li>
+      </ul>
+    </nav>
+
+    <div class="card-grid">
+      <div class="card">카드 1</div>
+      <div class="card">카드 2</div>
+      <div class="card">카드 3</div>
+      <div class="card">카드 4</div>
+      <div class="card">카드 5</div>
+      <div class="card">카드 6</div>
+    </div>
+  </body>
+</html>

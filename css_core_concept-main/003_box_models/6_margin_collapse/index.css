@@ -1,0 +1,45 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 마진 상쇄(형제/부모-자식)와 해결 방법을 적용하세요.
+*/
+
+.box {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #999;
+}
+
+.box-1 {
+  margin-bottom: 50px;
+  background-color: #ffcdd2;
+}
+
+.box-2 {
+  margin-top: 30px;
+  background-color: #bbdefb;
+}
+
+.result {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.parent {
+  width: 300px;
+  height: 100px;
+  background-color: #e1bee7;
+}
+
+.child {
+  width: 100px;
+  height: 50px;
+  background-color: #ba68c8;
+  margin-top: 30px;
+}
+
+.parent.collapse {
+}
+
+.parent.fix {
+}

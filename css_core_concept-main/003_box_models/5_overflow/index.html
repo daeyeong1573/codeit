@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: overflow</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 세 박스에 서로 다른 overflow를 적용하세요.
+
+      .box 공통
+         - width: 200px, height: 150px, border: 2px solid #333
+         - padding: 10px, background-color: #fff
+
+      1. .visible
+         - overflow: visible
+         - margin-bottom: 50px  (튀어나온 글이 아래 요소를 가리지 않도록)
+
+      2. .hidden
+         - overflow: hidden
+
+      3. .auto
+         - overflow: auto
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1 visible">
+        <h3>Visible (Default)</h3>
+        <p>이 박스는 높이가 고정되어 있지만 텍스트가 많아서 바깥으로</p>
+      </div>
+
+      <span>난 스팬!</span>이야
+
+      <div class="box box2 hidden">
+        <h3>Hidden</h3>
+        <p>이 박스는 넘치는 내용을 과감하게 잘라버립니다.</p>
+      </div>
+
+      <div class="box box3 auto">
+        <h3>Auto (Scroll)</h3>
+        <p>이 박스는 내용이 넘칠 때만 스크롤바가 생깁니다.</p>
+        <p>더 많은 내용임다다다다닫다다다다ㅏp></p>
+        <p>더 많은 내용...</p>
+        <p>더 많은 내용...</p>
+      </div>
+    </div>
+  </body>
+</html>

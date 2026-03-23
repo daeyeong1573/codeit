@@ -1,0 +1,50 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 box-shadow를 적용하세요.
+- 카드: 바깥쪽 부드러운 그림자 (붕 떠 있는 느낌)
+- 입력창: inset으로 안쪽 그림자 (파인 느낌)
+- 네온 버튼: blur만 이용한 발광 + 호버 시 다중 그림자
+*/
+
+body {
+  background-color: #f4f4f4;
+  padding: 50px;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #eee;
+  outline: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.neon-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #0f0;
+  border: 2px solid #0f0;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}

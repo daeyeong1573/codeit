@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습: Grid</title>
+    <!--
+      ========== 연습 요구사항 ==========
+      index.css를 수정하여 CSS Grid를 적용하세요.
+
+      1. .gallery
+         - display: grid
+         - grid-template-columns: repeat(3, 1fr)
+         - gap: 10px
+
+      2. .gallery img
+         - width: 100%, height: 200px, object-fit: cover
+
+      (선택) 반응형: grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="https://picsum.photos/400/300?random=1" alt="이미지 1" />
+      <img src="https://picsum.photos/400/300?random=2" alt="이미지 2" />
+      <img src="https://picsum.photos/400/300?random=3" alt="이미지 3" />
+      <img src="https://picsum.photos/400/300?random=4" alt="이미지 4" />
+      <img src="https://picsum.photos/400/300?random=5" alt="이미지 5" />
+      <img src="https://picsum.photos/400/300?random=6" alt="이미지 6" />
+    </div>
+  </body>
+</html>

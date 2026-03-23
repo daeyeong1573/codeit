@@ -1,0 +1,23 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+
+body {
+}
+
+.fixed-header {
+}
+
+.product-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.discount-badge {
+}
+
+.product-card h3,
+.product-card p {
+  margin: 10px 0 0;
+}
