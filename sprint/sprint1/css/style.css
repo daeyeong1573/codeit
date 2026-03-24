@@ -12,14 +12,15 @@
 
 @font-face {
   font-family: "Pretendard Variable";
-  font-weight: 45 920;
   font-style: normal;
   font-display: swap;
-  src: url("./woff2/PretendardVariable.woff2") format("woff2-variations");
+  src: url("../fonts/PretendardVariable.woff2") format("woff2");
 }
 
 :root {
   --primary-100: #3692ff;
+  --secondary-700: #374151;
+  --banner-background-color: #cfe5ff;
 }
 
 html,
@@ -118,29 +119,34 @@ a {
 
 header {
   position: fixed;
-  height: 70px;
+  background-color: white;
+  height: 4.375rem;
   width: 100vw;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-  width: auto;
+  width: 100%;
   height: auto;
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 
 .header-navbar {
   display: flex;
   align-items: center;
-  margin: 9.5px 200px;
   justify-content: space-between; /* 로고는 왼쪽, 로그인은 오른쪽 */
-  padding: 0 24px;
+  padding: 9.5px 200px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
-body {
-  line-height: 1;
-}
-
-ol,
 ul {
   list-style: none;
 }
@@ -152,6 +158,7 @@ table {
 
 #logo-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -182,10 +189,7 @@ table {
 
 .banner-section {
   display: flex;
-  background-image: url(../images/Img_home_top.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #cfe5ff;
+  background-color: var(--banner-background-color);
   height: 540px;
   align-items: center;
   justify-content: center;
@@ -195,8 +199,162 @@ table {
 }
 
 .banner-text {
+  display: flex;
+  flex-direction: column;
   font-family: "Pretendard Variable", sans-serif;
   font-size: 40px;
-  color: #374151;
+  line-height: 140%;
+  color: var(--secondary-700);
   font-weight: 700;
+}
+
+.banner-text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  color: white;
+  background-color: #3692ff;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  height: 56px;
+  width: 357px;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotpage-section,
+.serch-section,
+.sell-section {
+  display: flex;
+  margin: 138px 466px;
+}
+
+.hotpage-text {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  font-style: bold;
+  background-color: #fcfcfc;
+  padding-top: 103px;
+  padding-bottom: 103px;
+  padding-left: 64px;
+  padding-right: 31px;
+  width: auto;
+}
+
+.search-text {
+  display: flex;
+  gap: 24px;
+  text-align: right;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  font-style: bold;
+  background-color: #fcfcfc;
+  padding-top: 103px;
+  padding-bottom: 103px;
+  padding-left: 12px;
+  padding-right: 64px;
+  width: auto;
+}
+
+.sellPage-text {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  font-family: "Pretendard Variable", sans-serif;
+  background-color: #fcfcfc;
+  padding-top: 103px;
+  padding-bottom: 103px;
+  padding-left: 64px;
+  width: auto;
+}
+
+.intro-text1 {
+  color: var(--primary-100);
+  font-size: 18px;
+  font-weight: 700;
+}
+.intro-text2 {
+  color: var(--secondary-700);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.intro-text3 {
+  color: var(--secondary-700);
+  font-style: 500;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.footer-under-view {
+  background-color: #fcfcfc;
+  height: 138px;
+}
+
+.footer-banner {
+  width: 100%;
+  display: flex;
+  padding-top: 143px;
+  padding-left: 405px;
+  padding-right: 405px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--banner-background-color);
+}
+
+.info-footer {
+  background-color: #111827;
+  overflow-x: auto;
+}
+
+.footer-navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 108px;
+  padding-left: 200px;
+  padding-right: 200px;
+  justify-content: space-evenly;
+}
+
+.footer-info-text {
+  font-family: "Pretendard Variable" sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-start-txt {
+  color: #9ca3af;
+}
+
+.footer-center-txt {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.footer-center-txt a {
+  color: #e5e7eb;
+}
+
+.footer-sns-ul li {
+  display: inline-block;
+  margin: 2px;
 }
