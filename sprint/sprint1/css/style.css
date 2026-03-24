@@ -141,19 +141,14 @@ main {
 .header-navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 로고는 왼쪽, 로그인은 오른쪽 */
-  padding: 9.5px 200px;
-  max-width: 1920px;
+  justify-content: space-between;
+  padding: 0.594rem 12.5rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 ul {
   list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 #logo-container {
@@ -165,8 +160,8 @@ table {
 #logo-container p {
   font-family: "ROKAFSans", sans-serif;
   font-weight: 700;
-  font-size: 25.63px;
-  margin-left: 8.5px;
+  font-size: 1.602rem;
+  margin-left: 0.531rem;
   color: var(--primary-100);
 }
 
@@ -176,33 +171,38 @@ table {
 }
 
 .login-btn {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: "Pretendard Variable", sans-serif;
-  width: 128px;
-  height: 48px;
+  width: 8rem;
+  height: 3rem;
   background-color: var(--primary-100);
 }
 
 .banner-section {
   display: flex;
+  width: 100%;
   background-color: var(--banner-background-color);
-  height: 540px;
-  align-items: center;
+  height: 33.75rem;
   justify-content: center;
-  padding-top: 200px;
-  padding-left: 405px;
-  padding-right: 405px;
+}
+
+.banner-section .banner-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 120rem;
+  padding: 12.5rem 25.313rem 0;
 }
 
 .banner-text {
   display: flex;
   flex-direction: column;
   font-family: "Pretendard Variable", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 140%;
   color: var(--secondary-700);
   font-weight: 700;
@@ -212,14 +212,14 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 2rem;
   color: white;
   background-color: #3692ff;
-  border-radius: 40px;
-  font-size: 20px;
+  border-radius: 2.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  height: 56px;
-  width: 357px;
+  height: 3.5rem;
+  width: 22.313rem;
 }
 
 .intro-section {
@@ -230,70 +230,71 @@ table {
 }
 
 .hotpage-section,
-.serch-section,
+.search-section,
 .sell-section {
   display: flex;
-  margin: 138px 466px;
+  margin: 8.625rem 29.125rem;
 }
 
 .hotpage-text {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   flex-direction: column;
   font-family: "Pretendard Variable", sans-serif;
-  font-style: bold;
+  font-weight: 700;
   background-color: #fcfcfc;
-  padding-top: 103px;
-  padding-bottom: 103px;
-  padding-left: 64px;
-  padding-right: 31px;
+  padding-top: 6.438rem;
+  padding-bottom: 6.438rem;
+  padding-left: 4rem;
+  padding-right: 1.938rem;
   width: auto;
 }
 
 .search-text {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   text-align: right;
   flex-direction: column;
   font-family: "Pretendard Variable", sans-serif;
-  font-style: bold;
+  font-weight: 700;
   background-color: #fcfcfc;
-  padding-top: 103px;
-  padding-bottom: 103px;
-  padding-left: 12px;
-  padding-right: 64px;
+  padding-top: 6.438rem;
+  padding-bottom: 6.438rem;
+  padding-left: 0.75rem;
+  padding-right: 4rem;
   width: auto;
 }
 
 .sellPage-text {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   flex-direction: column;
   font-family: "Pretendard Variable", sans-serif;
   background-color: #fcfcfc;
-  padding-top: 103px;
-  padding-bottom: 103px;
-  padding-left: 64px;
+  padding-top: 6.438rem;
+  padding-bottom: 6.438rem;
+  padding-left: 4rem;
   width: auto;
 }
 
 .intro-text1 {
   color: var(--primary-100);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
+
 .intro-text2 {
   color: var(--secondary-700);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 140%;
 }
+
 .intro-text3 {
   color: var(--secondary-700);
-  font-style: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 2rem;
 }
 
 .clickable:hover {
@@ -302,18 +303,26 @@ table {
 
 .footer-under-view {
   background-color: #fcfcfc;
-  height: 138px;
+  height: 8.625rem;
+}
+
+footer {
+  margin: 0 auto;
 }
 
 .footer-banner {
   width: 100%;
   display: flex;
-  padding-top: 143px;
-  padding-left: 405px;
-  padding-right: 405px;
-  align-items: center;
   justify-content: center;
   background-color: var(--banner-background-color);
+}
+
+.footer-banner .banner-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 120rem;
+  padding: 8.938rem 25.313rem 0;
 }
 
 .info-footer {
@@ -324,17 +333,18 @@ table {
 .footer-navbar {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 108px;
-  padding-left: 200px;
-  padding-right: 200px;
-  justify-content: space-evenly;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 6.75rem;
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
 }
 
 .footer-info-text {
-  font-family: "Pretendard Variable" sans-serif;
+  font-family: "Pretendard Variable", sans-serif;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -347,14 +357,19 @@ table {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .footer-center-txt a {
   color: #e5e7eb;
 }
 
+.footer-sns-ul {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .footer-sns-ul li {
-  display: inline-block;
-  margin: 2px;
+  display: flex;
 }
