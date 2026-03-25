@@ -153,6 +153,7 @@ ul {
 
 #logo-container {
   display: flex;
+  white-space: nowrap;
   flex-direction: row;
   align-items: center;
 }
@@ -187,13 +188,15 @@ ul {
   width: 100%;
   background-color: var(--banner-background-color);
   height: 33.75rem;
+  overflow-x: visible;
   justify-content: center;
 }
 
 .banner-section .banner-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
+  overflow-x: visible;
   max-width: 120rem;
   padding: 12.5rem 25.313rem 0;
 }
@@ -201,6 +204,7 @@ ul {
 .banner-text {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   font-family: "Pretendard Variable", sans-serif;
   font-size: 2.5rem;
   line-height: 140%;
@@ -224,16 +228,36 @@ ul {
 
 .intro-section {
   display: flex;
+  margin-left: 29.125rem;
+  margin-right: 29.125rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hotpage-text,
+.search-text,
+.sellPage-text {
+  white-space: nowrap; /* ✅ 텍스트 줄바꿈 방지 */
 }
 
 .hotpage-section,
 .search-section,
 .sell-section {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin: 8.625rem 29.125rem;
+}
+
+@media (max-width: 48rem) {
+  /* 768px */
+  .hotpage-section,
+  .search-section,
+  .sell-section {
+    flex-wrap: wrap;
+    margin: 4rem 2rem;
+  }
 }
 
 .hotpage-text {
